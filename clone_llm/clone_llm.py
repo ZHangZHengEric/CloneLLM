@@ -15,6 +15,7 @@ class CloneLLM:
         logfile.write(json.dumps(one_conversation,ensure_ascii=False)+'\n')
         logfile.close()
         return result
+
     def clone_questions_answer(self,questions):
         # 将大量的问题跑流程，下载下来问答对。
         for question in questions:
